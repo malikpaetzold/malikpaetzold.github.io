@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>klimaneutral-jetzt.de — Klimaneutralität, aber bequem.</title>
+  <meta name="description" content="Satirische Zertifikate-Handelsplattform für politische Albträume, grüne Gewissen und ganz viel Hebelwirkung." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <div class="ticker" aria-label="Satire-Hinweis und Live-Meldungen">
+    <div class="ticker-track">
+      <span>LIVE: Retten Sie die Welt. Bequem per SEPA-Lastschrift.</span>
+      <span>Neu: 1,5-facher Hebel — weil 1,5 Grad einfach besser klingt.</span>
+      <span>Rabattcode KATHERINA: Mehr Gas geben, weniger Fragen.</span>
+      <span>100% gutes Gewissen garantiert.*  *gefühlt.</span>
+      <span>Politik zu kompliziert? Kaufen Sie ein Zertifikat.</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="klimaneutral-jetzt.de Startseite">
+      <span class="brand-mark">K</span>
+      <span>
+        <strong>klimaneutral-jetzt.de</strong>
+        <small>Klimaneutralität, aber bequem.</small>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="#shop">Zertifikate</a>
+      <a href="#rechner">Rechner</a>
+      <a href="#loesungen">Lösungen</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="cart-button" id="cartButton" type="button">
+      Warenkorb <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Die führende Handelsplattform für performative Klimaneutralität™</p>
+        <h1>Kauf dich <span>klimaneutral</span>, bevor die Realität dich einholt.</h1>
+        <p class="lead">Professionelle Zertifikate für Politik, Wirtschaft und alle, die es eilig haben. Jetzt mit patentiertem <strong>1,5-fachem Hebel</strong>. Emissionen sind wie Steuern - wer zahlt, ist selber schuld.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#shop">Jetzt Gewissen kaufen</a>
+          <button class="button ghost" id="panicButton" type="button">Krisenmodus aktivieren</button>
+        </div>
+        <div class="trust-row" aria-label="Vertrauenssignale">
+          <span>✓ TÜV-ähnlich gestaltet</span>
+          <span>✓ politisch anschlussfähig</span>
+          <span>✓ wissenschaftsfern skalierbar</span>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal" aria-label="Ausweisvorschau">
+        <div class="badge-frame">
+          <img src="assets/klimaneutral-jetzt.png" alt="Satirischer Messe-Badge Zertifikate Handel" />
+        </div>
+        <div class="status-panel">
+          <div>
+            <span class="status-dot"></span>
+            <strong>Markt geöffnet</strong>
+          </div>
+          <p>CO₂-Preis heute: <span id="livePrice">symbolisch</span></p>
+        </div>
+      </aside>
+    </section>
+
+  <section class="magic-chart-section">
+    <p>
+      Keine Lust, freitags im Regen zu stehen und Pappschilder hochzuhalten? Kaufen Sie unser „Solidaritäts-Zertifikat“. Wir lassen für Sie einen Praktikanten im Globalen Süden symbolisch eine Stunde lang böse gucken. Fühlt sich an wie echter Aktivismus!
+    </p>
+  </section class="magic-chart-section">
+
+    <section class="section" id="loesungen">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Unser Leistungsversprechen</p>
+        <h2>Wir lösen fast jedes Klimaproblem.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal tilt">
+          <span class="icon">🏛️</span>
+          <h3>Politische Zielverfehlung</h3>
+          <p>Wir machen es einfach. Warum Windräder bauen, wenn man Zertifikate aus einem fiktiven Waldprojekt in Sibirien kaufen kann? Unser Sozi-as-a-Service erzeugt sofort Sätze wie: „Wir müssen alle mitnehmen“.</p>
+        </article>
+        <article class="feature-card reveal tilt">
+          <span class="icon">✈️</span>
+          <h3>Emissionen zu hoch</h3>
+          <p>Wir rechnen es schön, runden es weg und nennen es Technologieoffenheit mit Bauchgefühl.</p>
+        </article>
+        <article class="feature-card reveal tilt">
+          <span class="icon">💬</span>
+          <h3>Kritik zu laut</h3>
+          <p>Wir schaffen gutes Gewissen. Perfekt für Hauptversammlungen und lästige Klima-Demos vor der Firmenzentrale.</p>
+        </article>
+        <article class="feature-card reveal tilt">
+          <span class="icon">🔥</span>
+          <h3>Fossile Restliebe</h3>
+          <p>Mit Rabattcode <button class="text-button coupon-inline" data-code="KATHERINA">KATHERINA</button> erhalten Sie 15% auf alles, was nach Zukunft klingt und nach Gas riecht.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="magic-chart-section">
+    <div class="section-kicker">Live-Dashboard</div>
+    <h2>Emissionen: wissenschaftlich fast gelöst</h2>
+    <p>
+      Unsere Prognose basiert auf modernster Achsenvermeidung, strategischer Skalierung
+      und einem sehr optimistischen Verständnis von Realität.
+    </p>
+
+    <div class="magic-chart-card">
+      <div class="chart-topline">
+        <div>
+          <strong>Bundesweites Emissions-Minimierungs-Interface</strong>
+          <span>Beta-Version, aber politisch bereits beschlossen</span>
+        </div>
+        <button id="solveEmissionsBtn" type="button">Emissionen magisch lösen</button>
+      </div>
+
+      <div class="chart-stage">
+        <svg id="magicChart" viewBox="0 0 900 420" role="img" aria-label="Satirisches Diagramm mit fallender Emissionslinie">
+          <defs>
+            <marker id="arrowDown" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+              <path d="M2,2 L10,6 L2,10 Z" fill="currentColor"></path>
+            </marker>
+          </defs>
+
+          <line class="chart-axis y-axis" x1="80" y1="40" x2="80" y2="350"></line>
+          <line class="chart-axis x-axis" x1="80" y1="350" x2="840" y2="350"></line>
+
+          <g class="chart-grid">
+            <line x1="80" y1="90" x2="840" y2="90"></line>
+            <line x1="80" y1="160" x2="840" y2="160"></line>
+            <line x1="80" y1="230" x2="840" y2="230"></line>
+            <line x1="80" y1="300" x2="840" y2="300"></line>
+          </g>
+
+          <path
+            id="emissionsLine"
+            class="emissions-line"
+            d="M100 85 C220 100, 270 130, 340 128 C430 126, 450 160, 500 170 C590 190, 620 260, 690 305 C740 335, 790 345, 830 348"
+          ></path>
+
+          <path
+            id="fakeTargetLine"
+            class="fake-target-line"
+            d="M100 85 C220 92, 310 95, 390 90 C470 86, 520 78, 590 70 C670 60, 750 50, 830 42"
+          ></path>
+
+          <g id="magicSparkles" class="magic-sparkles">
+            <text x="205" y="90">✦</text>
+            <text x="510" y="150">✧</text>
+            <text x="720" y="310">✦</text>
+            <text x="780" y="70">✧</text>
+          </g>
+
+          <text class="chart-label no-label-x" x="680" y="392">Achse bewusst unbeschriftet</text>
+          <text class="chart-label no-label-y" x="18" y="75" transform="rotate(-90 18 75)">Gefühlte Messwerte</text>
+          <text id="chartStamp" class="chart-stamp" x="410" y="215">MAGICALLY SOLVED</text>
+        </svg>
+
+        <div id="chartCommentary" class="chart-commentary">
+          Aktueller Stand: Die Linie ist noch verdächtig nah an der Realität.
+        </div>
+      </div>
+
+      <div class="chart-legend">
+        <span><i></i> Offizielle Darstellung</span>
+        <span><i></i> Wissenschaft, aber mit Hoffnung</span>
+        <span><i></i> Achsen: aus Datenschutzgründen entfernt</span>
+      </div>
+    </div>
+  </section>
+
+    <section class="co2-vanisher-section">
+      <div class="section-kicker">Sofort-Kompensation™</div>
+      <h2>Wie viel CO₂ hast du heute schon verursacht?</h2>
+      <p>
+        Gib eine ehrliche Zahl ein. Unser patentierter Verantwortungs-Verdampfer™
+        entfernt sie anschließend aus der politischen Wahrnehmung.
+      </p>
+
+      <div class="vanisher-card">
+        <label for="co2Input">Heutige Emissionen in kg CO₂</label>
+
+        <div class="vanisher-input-row">
+          <input id="co2Input" type="number" min="0" step="0.1" placeholder="z.B. 42" />
+          <button id="vanishCo2Btn" type="button">Jetzt wegkompensieren</button>
+        </div>
+
+        <div class="co2-display-wrap">
+          <div id="co2Amount" class="co2-amount">0 kg CO₂</div>
+          <div id="co2Cloud" class="co2-cloud">CO₂</div>
+          <div id="co2Result" class="co2-result">
+            Status: Noch messbar. Bitte nicht an die Presse geben.
+          </div>
+        </div>
+
+        <div class="fake-progress">
+          <div id="fakeProgressBar" class="fake-progress-bar"></div>
+        </div>
+
+        <div id="bureaucracyStamp" class="bureaucracy-stamp">
+          VERANTWORTUNG<br />ERFOLGREICH<br />AUSGELAGERT
+        </div>
+      </div>
+</section>
+
+    <section class="section shop" id="shop">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Zertifikate-Shop</p>
+        <h2>Wählen Sie Ihr Gewissenspaket.</h2>
+      </div>
+      <div class="products">
+        <article class="product reveal" data-product="Basis-Ausgleich" data-price="4.99">
+          <div class="product-top">
+            <h3>Basis-Ausgleich</h3>
+            <span class="price">4,99 €</span>
+          </div>
+          <p>Für kleine Alltagsmomente: Heizung auf 5, SUV auf Standgas, Kommentarspalten auf Durchzug.</p>
+          <ul>
+            <li>1 gefühlte Tonne CO₂</li>
+            <li>PDF-Zertifikat ohne Nachfragen</li>
+            <li>„Ich tue ja was“-Sticker</li>
+          </ul>
+          <button class="button add-to-cart" type="button">In den Warenkorb</button>
+        </article>
+
+        <article class="product featured reveal" data-product="Reiche Reserve" data-price="19.85">
+          <div class="ribbon">Beliebt bei Ministerien</div>
+          <div class="product-top">
+            <h3>Reiche Reserve</h3>
+            <span class="price">19,85 €</span>
+          </div>
+          <p>Das Premium-Paket für alle, die Klimaschutz wollen — aber bitte erst nach der nächsten Pipeline.</p>
+          <ul>
+            <li>1,5-facher Hebel inklusive</li>
+            <li>„Technologieoffen“-Floskelgenerator</li>
+            <li>Rabattcode KATHERINA kompatibel</li>
+          </ul>
+          <button class="button add-to-cart" type="button">In den Warenkorb</button>
+        </article>
+
+        <article class="product reveal" data-product="Lobby Platinum" data-price="49.00">
+          <div class="product-top">
+            <h3>Lobby Platinum</h3>
+            <span class="price">49,00 €</span>
+          </div>
+          <p>Für energieintensive Ausreden, sehr große Dienstwagen und sehr kleine Zeithorizonte.</p>
+          <ul>
+            <li>Unbegrenzte Sonntagsreden</li>
+            <li>Netzausbau-Sorgenumleitung</li>
+            <li>Bonus: RWE weiß es besser™</li>
+          </ul>
+          <button class="button add-to-cart" type="button">In den Warenkorb</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section calculator" id="rechner">
+      <div class="calc-card reveal">
+        <div>
+          <p class="eyebrow">Klimaneutralitätsrechner</p>
+          <h2>Wie viel Gewissen brauchen Sie heute?</h2>
+          <p>Schieben Sie die Regler. Unser Algorithmus ignoriert komplexe Zusammenhänge in Echtzeit.</p>
+        </div>
+        <form class="calc-form" id="calcForm">
+          <label>
+            Dienstwagen-Drama
+            <input type="range" min="0" max="100" value="35" id="carRange" />
+          </label>
+          <label>
+            Flugscham-Bedarf
+            <input type="range" min="0" max="100" value="55" id="flightRange" />
+          </label>
+          <label>
+            Politische Zielverfehlung
+            <input type="range" min="0" max="100" value="75" id="policyRange" />
+          </label>
+          <div class="calc-result">
+            <span>Empfohlenes Paket</span>
+            <strong id="recommendation">Reiche Reserve</strong>
+            <p id="calcCopy">Mit 1,5-fachem Hebel sieht das schon fast nach Plan aus.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section parody-terminal reveal" aria-label="Greenwashing Terminal">
+      <div class="terminal-top">
+        <span></span><span></span><span></span>
+        <strong>greenwashing-cli</strong>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <p>&gt; analysiere Klimapolitik...</p>
+        <p>&gt; Ergebnis: Ziel verfehlt.</p>
+        <p>&gt; Lösung: Zertifikat drucken.</p>
+      </div>
+      <button class="button ghost" id="generateExcuse" type="button">Neue Ausrede generieren</button>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Häufig wegkompensierte Fragen</p>
+        <h2>FAQ</h2>
+      </div>
+      <details class="reveal">
+        <summary>Ist das echter Klimaschutz?</summary>
+        <p>Also wir haben zumindest viele Siegel und in Talkshows wird überraschend selten nachgefragt.</p>
+      </details>
+      <details class="reveal">
+        <summary>Was bedeutet 1,5-facher Hebel?</summary>
+        <p>Dass aus einer Maßnahme emotional anderthalb werden. Physikalisch fragwürdig, kommunikativ hervorragend.</p>
+      </details>
+      <details class="reveal">
+        <summary>Aber moment mal, fickt das nicht den ganzen Planeten??</summary>
+        <p>There is no Planet B. Aber es gibt Konten in der Schweiz – und wir helfen, sie zu füllen.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>klimaneutral-jetzt.de</strong> Made with ❤️ by Malik im ICE nach Halle</p>
+    <button class="text-button" id="printCert" type="button">Musterzertifikat drucken</button>
+  </footer>
+
+  <dialog class="cart-modal" id="cartModal">
+    <div class="modal-header">
+      <h2>Warenkorb</h2>
+      <button class="icon-button" id="closeCart" type="button" aria-label="Warenkorb schließen">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="coupon-box">
+      <label for="couponInput">Rabattcode</label>
+      <div>
+        <input id="couponInput" placeholder="z.B. KATHERINA" />
+        <button class="button ghost" id="applyCoupon" type="button">Anwenden</button>
+      </div>
+      <p id="couponMessage"></p>
+    </div>
+    <div class="cart-total">
+      <span>Gesamt</span>
+      <strong id="cartTotal">0,00 €</strong>
+    </div>
+    <button class="button primary full" id="checkout" type="button">Jetzt klimaneutral fühlen</button>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <template id="certificateTemplate">
+    <section class="certificate">
+      <h1>ZERTIFIKAT</h1>
+      <h2>fühlt sich sehr nach Klimaneutralität an</h2>
+      <p>Die Klimakrise wurde erfolgreich auf später verschoben.</p>
+      <strong>1,5× Hebel aktiviert</strong>
+      <small>klimaneutral.jetzt.de · dafinitiv nicht Satire ;) · nicht einlösbar vorm BVerfG</small>
+    </section>
+  </template>
+
+  <script src="script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  /* =========================
+     1) CO2 WEGKOMPENSIEREN
+  ========================= */
+
+  const co2Input = document.getElementById("co2Input");
+  const vanishCo2Btn = document.getElementById("vanishCo2Btn");
+  const co2Amount = document.getElementById("co2Amount");
+  const co2Result = document.getElementById("co2Result");
+  const co2DisplayWrap = document.querySelector(".co2-display-wrap");
+  const fakeProgressBar = document.getElementById("fakeProgressBar");
+  const bureaucracyStamp = document.getElementById("bureaucracyStamp");
+  const vanisherCard = document.querySelector(".vanisher-card");
+
+  const compensationMessages = [
+    "Erledigt. Das CO₂ wurde erfolgreich in eine PowerPoint-Folie verschoben.",
+    "Kompensiert. Die Atmosphäre wurde nicht informiert.",
+    "Weg. Der Markt hat geregelt, was die Physik unnötig kompliziert gemacht hat.",
+    "Neutralisiert. Dank 1,5-fachem Hebel sogar moralisch überkompensiert.",
+    "Gelöst. Die Emissionen befinden sich jetzt außerhalb des Zuständigkeitsbereichs.",
+    "Ausgeglichen. Bitte ab jetzt nur noch von Restverantwortung sprechen.",
+    "Verschwunden. Ein sehr seriöses Zertifikat hat kurz genickt.",
+    "Kompensiert. Rabattcode KATHERINA wurde automatisch angewendet: Zukunft später zahlen."
+  ];
+
+  function formatKg(value) {
+    return `${value.toLocaleString("de-DE", {
+      maximumFractionDigits: 1
+    })} kg CO₂`;
+  }
+
+  function vanishCO2() {
+    if (!co2Input || !co2Amount || !co2Result || !co2DisplayWrap) return;
+
+    const rawValue = Number(co2Input.value);
+    const value = Number.isFinite(rawValue) && rawValue > 0 ? rawValue : 0;
+
+    co2DisplayWrap.classList.remove("vanishing");
+    bureaucracyStamp?.classList.remove("show");
+    vanisherCard?.classList.remove("shake");
+
+    if (fakeProgressBar) fakeProgressBar.style.width = "0%";
+
+    co2Amount.style.opacity = "1";
+    co2Amount.style.transform = "scale(1)";
+    co2Amount.style.filter = "none";
+    co2Amount.textContent = formatKg(value);
+
+    if (value <= 0) {
+      co2Result.textContent = "Keine Emissionen? Verdächtig. Wir verkaufen dir trotzdem ein Zertifikat.";
+    } else if (value < 10) {
+      co2Result.textContent = "Kleinemission erkannt. Wird bürokratisch aufgeblasen und dann gelöst.";
+    } else if (value < 100) {
+      co2Result.textContent = "Mittlere Gewissensbelastung erkannt. Starte Sofort-Kompensation™.";
+    } else {
+      co2Result.textContent = "Großemission erkannt. Aktiviere Sondervermögen Gutes Gewissen.";
+    }
+
+    setTimeout(() => {
+      if (fakeProgressBar) fakeProgressBar.style.width = "115%";
+      co2DisplayWrap.classList.add("vanishing");
+      vanisherCard?.classList.add("shake");
+    }, 30);
+
+    setTimeout(() => {
+      co2Amount.textContent = "0 kg CO₂";
+      co2Amount.style.opacity = "1";
+      co2Amount.style.transform = "scale(1)";
+      co2Amount.style.filter = "none";
+
+      const randomMessage = compensationMessages[
+        Math.floor(Math.random() * compensationMessages.length)
+      ];
+
+      co2Result.textContent = randomMessage;
+      bureaucracyStamp?.classList.add("show");
+    }, 1200);
+  }
+
+  vanishCo2Btn?.addEventListener("click", vanishCO2);
+
+  co2Input?.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") vanishCO2();
+  });
+
+
+  /* =========================
+     2) EMISSIONEN MAGISCH LÖSEN
+  ========================= */
+
+  const solveEmissionsBtn = document.getElementById("solveEmissionsBtn");
+  const magicChartCard = document.querySelector(".magic-chart-card");
+  const chartCommentary = document.getElementById("chartCommentary");
+  const emissionsLine = document.getElementById("emissionsLine");
+
+  const originalLine =
+    "M100 85 C220 100, 270 130, 340 128 C430 126, 450 160, 500 170 C590 190, 620 260, 690 305 C740 335, 790 345, 830 348";
+
+  const solvedLine =
+    "M100 85 C210 140, 280 215, 360 260 C430 300, 510 328, 620 340 C710 350, 780 350, 830 350";
+
+  const chartMessages = [
+    "Update: Emissionen sinken jetzt, weil die Linie sinkt.",
+    "Problem gelöst: Die Achsen wurden so lange nicht beschriftet, bis es gut aussah.",
+    "Klimaziel erreicht: zumindest im Präsentationsmodus.",
+    "Die Kurve wurde erfolgreich von der Realität entkoppelt.",
+    "Ministerieller Hinweis: Was unten ist, kann nicht mehr emittieren.",
+    "BREAKING: Durch beherztes Diagramm-Management wurden 97% der Sorgen eingespart.",
+    "Seriöse Analyse: Ab jetzt geht alles nach unten, außer die Stromrechnung.",
+    "Sondervermögen aktiviert: Die Zukunft wurde auf nach der Legislaturperiode verschoben."
+  ];
+
+  solveEmissionsBtn?.addEventListener("click", () => {
+    if (!magicChartCard || !chartCommentary || !emissionsLine) return;
+
+    magicChartCard.classList.remove("solved");
+    emissionsLine.setAttribute("d", originalLine);
+
+    setTimeout(() => {
+      magicChartCard.classList.add("solved");
+      emissionsLine.setAttribute("d", solvedLine);
+    }, 40);
+
+    chartCommentary.textContent =
+      chartMessages[Math.floor(Math.random() * chartMessages.length)];
+
+    solveEmissionsBtn.textContent = "Noch magischer lösen";
+
+    setTimeout(() => {
+      solveEmissionsBtn.textContent = "Emissionen erneut wegerklären";
+    }, 1400);
+  });
+});
+</script>
+
+</body>
+</html>
