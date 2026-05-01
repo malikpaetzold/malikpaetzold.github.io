@@ -882,3 +882,41 @@ details[open] summary::marker { content: "– "; }
     opacity: 0.28;
   }
 }
+
+@media (max-width: 620px) {
+  .chart-stage {
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .chart-commentary {
+    position: static;
+    margin: 12px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    line-height: 1.25;
+    text-align: left;
+  }
+
+  #magicChart {
+    margin-bottom: 0;
+  }
+}
+
+.confetti-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999999;
+  overflow: hidden;
+}
+
+.confetti-piece {
+  position: fixed;
+  top: -2rem;
+  z-index: 999999;
+  font-weight: 950;
+  font-size: clamp(1rem, 4vw, 1.7rem);
+  pointer-events: none;
+  will-change: transform, opacity;
+}

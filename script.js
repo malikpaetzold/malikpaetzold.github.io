@@ -92,10 +92,41 @@ document.addEventListener('DOMContentLoaded', () => {
     applyCoupon(code);
   }));
 
-  qs('#checkout')?.addEventListener('click', () => {
+  function playToroSound() {
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  
+    const notes = [
+      { freq: 392, start: 0.00, duration: 0.16 },
+      { freq: 523, start: 0.14, duration: 0.20 },
+      { freq: 659, start: 0.30, duration: 0.28 },
+      { freq: 523, start: 0.56, duration: 0.22 }
+    ];
+  
+    notes.forEach(({ freq, start, duration }) => {
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+  
+      osc.type = "square";
+      osc.frequency.value = freq;
+  
+      gain.gain.setValueAtTime(0.0001, audioCtx.currentTime + start);
+      gain.gain.exponentialRampToValueAtTime(0.12, audioCtx.currentTime + start + 0.03);
+      gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + start + duration);
+  
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+  
+      osc.start(audioCtx.currentTime + start);
+      osc.stop(audioCtx.currentTime + start + duration + 0.05);
+    });
+  }
+
+  qs('#checkout').addEventListener('click', () => {
     if (!state.cart.length) return toast('Bitte erst Gewissen in den Warenkorb legen.');
+  
     toast('Zahlung simuliert. Sie sind nun gefühlt klimaneutral.');
     confettiBurst();
+    playToroSound();
   });
 
   const observer = new IntersectionObserver((entries) => {
@@ -343,18 +374,45 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function confettiBurst() {
-    const count = window.matchMedia('(max-width: 620px)').matches ? 28 : 48;
-    for (let i = 0; i < count; i++) {
-      const piece = document.createElement('span');
-      piece.textContent = ['€', 'CO₂', '✓', 'Gas', '1,5×'][Math.floor(Math.random() * 5)];
-      piece.className = 'confetti-piece';
-      piece.style.left = Math.random() * 100 + 'vw';
-      piece.style.top = '-2rem';
-      document.body.appendChild(piece);
-      piece.animate([
-        { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
-        { transform: `translateY(${80 + Math.random() * 25}vh) rotate(${Math.random() * 720}deg)`, opacity: 0 }
-      ], { duration: 1100 + Math.random() * 1400, easing: 'cubic-bezier(.2,.8,.2,1)' }).onfinish = () => piece.remove();
+    let layer = document.querySelector(".confetti-layer");
+  
+    if (!layer) {
+      layer = document.createElement("div");
+      layer.className = "confetti-layer";
+      document.body.appendChild(layer);
     }
+  
+    const pieces = ["€", "CO₂", "✓", "Gas", "1,5×", "🌱", "💸", "📄"];
+  
+    for (let i = 0; i < 70; i++) {
+      const piece = document.createElement("span");
+      piece.className = "confetti-piece";
+      piece.textContent = pieces[Math.floor(Math.random() * pieces.length)];
+  
+      piece.style.left = Math.random() * 100 + "vw";
+  
+      layer.appendChild(piece);
+  
+      piece.animate(
+        [
+          {
+            transform: `translateY(-5vh) translateX(0) rotate(0deg)`,
+            opacity: 1
+          },
+          {
+            transform: `translateY(${85 + Math.random() * 20}vh) translateX(${(Math.random() - 0.5) * 120}px) rotate(${Math.random() * 900}deg)`,
+            opacity: 0
+          }
+        ],
+        {
+          duration: 1200 + Math.random() * 1200,
+          easing: "cubic-bezier(.2,.8,.2,1)"
+        }
+      ).onfinish = () => piece.remove();
+    }
+  
+    setTimeout(() => {
+      if (!layer.children.length) layer.remove();
+    }, 2600);
   }
 });
