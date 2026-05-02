@@ -149,13 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const excuses = [
     'Wir lösen das Problem mit einem marktwirtschaftlichen Instrument, das zufällig niemand kontrolliert.',
-    'Klimaschutz darf die Wirtschaft nicht überfordern, außer er findet nicht statt.',
     'Die Emissionen sinken perspektivisch, sobald die Perspektive weit genug weg ist.',
     'Wir setzen auf Technologieoffenheit: offen für Gas, offen für Ausreden, offen bis 2045.',
-    'Das ist kein Rückschritt, das ist eine rückwärtsgewandte Vorwärtsstrategie.',
+    'Das ist kein Rückschritt, das ist eine rückwärtsgewandte Vorwärtsrolle.',
     'Wir prüfen ambitioniert, ob andere handeln könnten.',
-    'Die Bundesregierung bleibt auf Kurs. Der Kurs wurde nur nicht öffentlich beschriftet.',
-    'Die Klimaziele bleiben bestehen. Wir entfernen lediglich den Teil mit dem Erreichen.'
+    'Die Bundesregierung bleibt auf Kurs. Der Kurs ist nur nicht öffentlich bekannt.',
+    'Die Klimaziele bleiben bestehen. Wir streichen lediglich den Teil mit dem Erreichen.'
   ];
 
   qs('#generateExcuse')?.addEventListener('click', () => {
@@ -177,10 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (score < 35) {
       recommendation.textContent = 'Basis-Ausgleich';
-      copy.textContent = 'Ein kleines Zertifikat reicht, um die innere Pressemitteilung zu beruhigen.';
+      copy.textContent = 'Ein kleiner Schritt für einen Menschen, aber ein großer Schritt für die Menschheit.';
     } else if (score < 70) {
       recommendation.textContent = 'Reiche Reserve';
-      copy.textContent = 'Mit 1,5-fachem Gewissenshebel sieht das schon fast nach Plan aus.';
+      copy.textContent = 'Mit 1,5-fachem Hebel sind wir schon bald wieder auf Kurs.';
     } else {
       recommendation.textContent = 'Lobby Platinum';
       copy.textContent = 'Wir empfehlen zusätzlich eine Taskforce, drei Panels und sehr viele Verben im Futur.';
@@ -240,14 +239,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!co2Input || !vanishCo2Btn || !co2Amount || !co2Result || !co2DisplayWrap) return;
 
     const compensationMessages = [
-      'Erledigt. Das CO₂ wurde erfolgreich in eine PowerPoint-Folie verschoben.',
+      'Erledigt. Das CO₂ wurde erfolgreich in einer PowerPoint-Folie verschoben.',
       'Kompensiert. Die Atmosphäre wurde aus dem Verteiler genommen.',
       'Weg. Der Markt hat geregelt, was die Physik unnötig kompliziert gemacht hat.',
-      'Neutralisiert. Dank Gewissenshebel sogar moralisch überkompensiert.',
-      'Gelöst. Die Emissionen befinden sich jetzt außerhalb des Zuständigkeitsbereichs.',
+      'Neutralisiert. Puh, das war knapp.',
+      'Gelöst. Die Emissionen befinden sich jetzt außerhalb ihres Zuständigkeitsbereichs.',
       'Ausgeglichen. Bitte ab jetzt nur noch von Restverantwortung sprechen.',
       'Verschwunden. Ein sehr seriöses Zertifikat hat kurz genickt.',
-      'Kompensiert. Zukunftskosten wurden automatisch an spätere Generationen weitergeleitet.',
+      'Kompensiert. Folgekosten wurden automatisch an spätere Generationen weitergeleitet.',
       'Erfolg: Die Zahl ist weg. Die Moleküle äußern sich nicht zu laufenden Verfahren.'
     ];
 
@@ -332,14 +331,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const chaosLine = 'M100 85 C190 70, 245 135, 315 120 C390 108, 455 190, 520 168 C590 142, 640 285, 700 250 C760 226, 790 336, 830 348';
 
     const chartMessages = [
-      'Update: Emissionen sinken jetzt, weil die Linie sinkt. So einfach kann Politik sein.',
-      'Problem gelöst: Die Achsen wurden so lange nicht beschriftet, bis es gut aussah.',
+      'Update: Emissionen werden jetzt sinken, weil die Linie nach unten geht. Easy.',
+      'Problem gelöst!!1',
       'Klimaziel erreicht: zumindest im Präsentationsmodus und auf kleinen Displays.',
       'Die Kurve wurde erfolgreich von der Realität entkoppelt.',
       'Ministerieller Hinweis: Was unten ist, kann nicht mehr emittieren.',
-      'BREAKING: Durch beherztes Diagramm-Management wurden 97% der Sorgen eingespart.',
+      'Durch beherztes Diagramm-Management wurden 97% der Sorgen eingespart.',
       'Seriöse Analyse: Ab jetzt geht alles nach unten, außer die Stromrechnung.',
-      'Sondervermögen aktiviert: Die Zukunft wurde auf nach der Legislaturperiode verschoben.'
     ];
 
     function solveChart() {
